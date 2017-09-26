@@ -37,6 +37,7 @@ handleNameChange(event){
   // Then, set the value of the input back to an empty string.
   // Enter your code below:
 handleSubmit(event){
+  event.preventDefault()
   this.setState({
     pilot: this.state.value,
     value: ""
